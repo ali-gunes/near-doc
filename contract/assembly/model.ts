@@ -26,10 +26,8 @@ export class Game {
     player2Dfs: u16;
     nextPlayer: string;
     roundsPlayed: u8;
-    //hashedNumber: Uint8Array;
     totalAmount: u128;
     creationAmount: u128;
-    //bet: u128 = u128.Zero;
   
     constructor() {
       this.id = context.blockIndex.toString().slice(2, 8);
@@ -43,9 +41,7 @@ export class Game {
       this.poneOverall = playerAtr("1")
       this.ptwoOverall = playerAtr("2")
 
-    // knight: 4:6
-    // rogue: 6:4
-    // wizard: 7:3
+
       if (readValue("Player1") == "Knight"){
         this.player1Atk = (playerAtr("1") / 10) * 4 
         this.player1Dfs = (playerAtr("1") / 10) * 6 
@@ -119,29 +115,29 @@ function playerAtr(player: string): u16 {
     // Rogue: 2 4 1 2 3 2
     if(sysClass == "Intelligence" || sysClass == "Wisdom"){
       let sysRace = "Wizard"
-      //logging.log("Your champion's race is " + sysRace + " with " + maxS.toString() + " " + sysClass + " points")
+  
       const overallScore = 1 * atr[0] + 2 * atr[1] + 4 * atr[2] + 3 * atr[3] + 2 * atr[4] + 2 * atr[5]
-      //logging.log(overallScore)
+      
       write("Player"+player, sysRace)
-      //write("Player"+player+"Overall", overallScore.toString())
+      
       return overallScore as u16
     }
     else if (sysClass == "Strength" || sysClass == "Charisma"){
       let sysRace = "Knight"
-      //logging.log("Your champion's race is " + sysRace + " with " + maxS.toString() + " " + sysClass + " points")
+      
       const overallScore = 4 * atr[0] + 2 * atr[1] + 1 * atr[2] + 2 * atr[3] + 3 * atr[4] + 2 * atr[5]
-      //logging.log(overallScore)
+      
       write("Player"+player, sysRace)
-      //write("Player"+player+"Overall", overallScore.toString())
+      
       return overallScore as u16
     }
     else if (sysClass == "Dexterity" || sysClass == "Constitution"){
       let sysRace = "Rogue"
-      //logging.log("Your champion's race is " + sysRace + " with " + maxS.toString() + " " + sysClass + " points")
+      
       const overallScore = 2 * atr[0] + 4 * atr[1] + 1 * atr[2] + 2 * atr[3] + 3 * atr[4] + 2 * atr[5]
-      //logging.log(overallScore)
+      
       write("Player"+player, sysRace)
-      //write("Player"+player+"Overall", overallScore.toString())
+      
       return overallScore as u16
     }
     else{
