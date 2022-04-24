@@ -6,16 +6,6 @@ import { Game, games, State} from './model';
 // wizard: 7:3
 
 
-// View Methods
-export function viewGame(id: string): Game {
-  return games.getSome(id);
-}
-
-export function viewAllGames(): Array<Game> {
-  return games.values();
-}
-
-
 // Call Methods (needs a signer)
 export function createGame(): string {
   // attach 5 NEAR to start
@@ -113,9 +103,9 @@ export function joinGame(id: string): string {
   assert(game.player2 == '', 'This game is already a pair, you can start a new game by calling this contract again!');
   assert(game.player1 != context.sender, 'You can not join as opponent to your own game!');
 
-  // Player2 deposits 1 NEAR to join the game
+  // Player2 deposits 5 NEAR to join the game
   game.totalAmount = u128.add(game.totalAmount, context.attachedDeposit);
-  // logging.log(game.totalAmount);
+  
 
   game.player2 = context.sender;
   game.state = State.InProgress;
@@ -142,7 +132,7 @@ function finishGame(game: Game, player: string): string {
   // transfer NEAR to the winner
   const to_winner = ContractPromiseBatch.create(player);
   const amount_to_receive = game.totalAmount;
-  // logging.log(amount_to_receive);
+  
   to_winner.transfer(amount_to_receive);
 
   games.set(game.id, game);
@@ -163,4 +153,3 @@ function returnMoney(game: Game, player1: string, player2: string): void {
 
   games.set(game.id, game);
 }
-
