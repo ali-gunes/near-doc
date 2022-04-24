@@ -107,4 +107,5 @@ For this step you can either call scripts or manually run the contract, to do th
 
 
 Thanks to NEAR University and Patika.dev for incredibly prepared course materials
+
 Thanks to [norrec99](https://github.com/norrec99/Guess-My-Number) for inspiring me :)
