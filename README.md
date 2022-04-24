@@ -106,6 +106,6 @@ For this step you can either call scripts or manually run the contract, to do th
 + If smart contract calls it a draw, cancels the game and returns the inital deposited NEAR tokens to it's senders
 
 
-Thanks to NEAR University and Patika.dev for incredibly prepared course materials
+Thanks to [NEAR University](https://www.near.university/) and [Patika.dev](https://www.patika.dev/) for incredibly prepared course materials
 
 Thanks to [norrec99](https://github.com/norrec99/Guess-My-Number) for inspiring me :)
