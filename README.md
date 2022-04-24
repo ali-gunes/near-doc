@@ -13,6 +13,25 @@
 
 ---
 
+<a href="https://www.loom.com/share/0da248edd5cf44cc8263fa0fa69af880">
+    <p>Duel of Champions - Part 1</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/0da248edd5cf44cc8263fa0fa69af880-with-play.gif">
+  </a>
+
+
+<a href="https://www.loom.com/share/af770717884348f4a4ea532f094979c0">
+    <p>Duel of Champions - Part 2</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/af770717884348f4a4ea532f094979c0-1650797297103-with-play.gif">
+  </a>
+  
+  
+<a href="https://www.loom.com/share/d843b43e39be4420990a6bb998683277">
+    <p>Duel of Champions - Part 3</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d843b43e39be4420990a6bb998683277-with-play.gif">
+  </a>
+  
+---
+
 This app was initialized with [create-near-app](https://github.com/near/create-near-app)
 
 # Quick Start
