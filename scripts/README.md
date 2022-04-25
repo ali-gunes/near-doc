@@ -33,9 +33,9 @@ It uses the following setup:
 
   _helper scripts_
   ```sh
-  1.dev-deploy.sh                # helper: build and deploy contracts
-  2.create-a-game.sh              # helper: call methods on ContractPromise
-  3.play.sh                   # helper: delete build and deploy artifacts
+  1.dev-deploy.sh                 # helper: build and deploy contracts
+  2.create-a-game.sh              # helper: create a new game and let PLAYER2 to join
+  3.play.sh                       # helper: ECHO script on how to play
   ```
 
 ### Terminal **B**
@@ -43,7 +43,7 @@ It uses the following setup:
 *This window is used for your opponent's game moves*
 - Environment
   ```sh
-  export CONTRACT=        # depends on dev-deployment
+  export CONTRACT=          # depends on dev-deployment
   export PLAYER2=           # any account you control
 
   # for example
