@@ -50,7 +50,7 @@ This app was initialized with [create-near-app](https://github.com/near/create-n
 ---
 
 # Deploying on NEAR 
-Every smart contract needs a network to run. That network for this project is NEAR. When you run `npm run dev`, your smart contract gets deployed to the live NEAR TestNet with a testnet account. This is a shortcut to use while testing your contract. You can make it permanent by creating an actual testnet account from [NEAR Testnet](https://wallet.testnet.near.org/create)
+Every smart contract needs a network to run. That network for this project is NEAR. When you run `near dev-deploy`, your smart contract gets deployed to the live NEAR TestNet with a testnet account. This is a shortcut to use while testing your contract. You can make it permanent by creating an actual testnet account from [NEAR Testnet](https://wallet.testnet.near.org/create)
 
 ---
 
