@@ -124,6 +124,13 @@ For this step you can either call scripts or manually run the contract, to do th
 ### returnMoney
 + If smart contract calls it a draw, cancels the game and returns the inital deposited NEAR tokens to it's senders
 
+### viewGame 
++ Takes GAME ID as a string
++ Returns given game's PersistentUnorderedMap structure
+
+### viewAllGames
++ Returns all games' PersistentUnorderedMap structure
+
 
 Thanks to [NEAR University](https://www.near.university/) and [Patika.dev](https://www.patika.dev/) for incredibly prepared course materials
 
