@@ -35,11 +35,13 @@ export class Game {
       this.player1Health = 100 
       this.player2Health = 100 
 
+      this.poneOverall = playerAtr("1")
+      this.ptwoOverall = playerAtr("2")
+        
       this.player1Race = readValue("Player1")
       this.player2Race = readValue("Player2")
 
-      this.poneOverall = playerAtr("1")
-      this.ptwoOverall = playerAtr("2")
+
 
 
       if (readValue("Player1") == "Knight"){
