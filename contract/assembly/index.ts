@@ -5,6 +5,14 @@ import { Game, games, State} from './model';
 // rogue: 6:4
 // wizard: 7:3
 
+// Using PersistentUnorderedMap for viewing game data
+export function viewGame(id: string): Game {
+  return games.getSome(id);
+}
+
+export function viewAllGames(): Array<Game> {
+  return games.values();
+}
 
 // Call Methods (needs a signer)
 export function createGame(): string {
