@@ -132,6 +132,6 @@ For this step you can either call scripts or manually run the contract, to do th
 + Returns all games' PersistentUnorderedMap structure
 
 
-Thanks to [NEAR University](https://www.near.university/) and [Patika.dev](https://www.patika.dev/) for incredibly prepared course materials
+Thanks to [NEAR University](https://www.near.university/) for incredibly prepared course materials
 
 Thanks to [norrec99](https://github.com/norrec99/Guess-My-Number) for inspiring me :)
